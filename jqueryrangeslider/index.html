@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基于ion.rangeslider.js 左右拖动滑块选择区间价格范围js代码</title>
+    <script src="./js/public.js"></script>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<style>
+    .visibilityHiden{
+        visibility: hidden;
+    }
+    
+</style>
+
+<body>
+    <!-- 主内容区 -->
+    <div class="bigBox">
+        <!-- 导航栏 -->
+        <div class="navBigBox ">
+            <div class="navBox clearfix">
+                <!-- 首付 -->
+                <div  class="selecteList_fisrt selectClass selecteList_downPayment">
+                    <ul class="ndownPayment_ul clearfix">
+                        <li data-ndownPayment="" class="ndownPayment_noLimit selected "><p>不限</p></li>
+                        <li data-ndownPayment="0_10000"><p>1万以内</p></li>
+                        <li data-ndownPayment="10000_20000"><p>1-2万</p></li>
+                        <li data-ndownPayment="20000_30000"><p>2-3万</p></li>
+                        <li data-ndownPayment="30000_40000"><p>3-4万</p></li>
+                        <li data-ndownPayment="40000_60000"><p>4万以上</p></li>
+                    </ul>
+                    <!-- 左右滑动 -->
+                    <div class="moveBox">
+                        <div class="moveTitle clearfix"><p class="fl">自定义首付<span class="wangCss">&nbsp;(万)</span></p><p data-leftNum="" data-rightNum="" class="changeNum bxsh fr">不限首付</p></div>
+                        <div class="moveContent">
+                            <input type="text" value="1111" class="range_1" />
+                            <div class="moveScale">
+                                <p>0</p>
+                                <p class="ndownPayment_p_1">1</p>
+                                <p class="ndownPayment_p_2">2</p>
+                                <p class="ndownPayment_p_3">3</p>
+                                <p class="ndownPayment_p_4">4</p>
+                                <p class="ndownPayment_p_5">5</p>
+                                <p>不限</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 确定 -->
+                    <div class="confirmButton confirmButton1">
+                        <a href="javascript:void(0);">确定</a>
+                    </div>
+                </div>
+                <!-- 月供 -->
+                <div class="selecteList_fisrt selectClass selecteList_month">
+                    <ul class="nmonthlyPayment_ul clearfix">
+                        <li data-nmonthlyPayment="" class="nmonthlyPayment_noLimit selected"><p>不限</p></li>
+                        <li data-nmonthlyPayment="0_2000"><p>2000以内</p></li>
+                        <li data-nmonthlyPayment="2000_3000"><p>2000-3000</p></li>
+                        <li data-nmonthlyPayment="3000_4000"><p>3000-4000</p></li>
+                        <li data-nmonthlyPayment="4000_5000"><p>4000-5000</p></li>
+                        <li data-nmonthlyPayment="5000_6000"><p>5000以上</p></li>
+                    </ul>
+                    <!-- 左右滑动 -->
+                    <div class="moveBox">
+						<div class="changeNum bxyc">0-100万</div>
+                        <div class="moveTitle clearfix"><p class="fl">自定义月供<span class="wangCss">&nbsp;(元)</span></p><p class="changeNum bxyc fr">100万</p></div>
+                        <div class="moveContent">
+                            <input type="text" value="1111" class="range_2" />
+                            <!-- <div class="moveScale">
+                                <p>0</p>
+                                <p class="nmonthlyPayment_p_1">1000</p>
+                                <p class="nmonthlyPayment_p_2">2000</p>
+                                <p class="nmonthlyPayment_p_3">3000</p>
+                                <p class="nmonthlyPayment_p_4">4000</p>
+                                <p class="nmonthlyPayment_p_5">5000</p>
+                                <p>不限</p>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- 确定 -->
+                    <div class="confirmButton confirmButton2">
+                        <a href="javascript:void(0);">确定</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="./js/ion.rangeSlider.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
